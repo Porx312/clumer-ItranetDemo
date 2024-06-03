@@ -11,18 +11,25 @@
 
         <header class="content-intranet-menu">
             <nav class="menu">
-                <div>
+                <div class="menu-img">
                 <img src="./assets/clumer-250.png" alt="clumer logo">
 
+                </div>  
+                <div class="menu-contnet">
+
+                    <ul>
+                        <li><a href="./index.html"> <img src="./assets/home.png" alt="home"> Dashboard</a></li>
+                        <li><a href="./Tickets.html"><img src="./assets/travel.png" alt="tickets"> Tickets</a></li>
+                        <li><a href="./user.html"><img src="./assets/user.png" alt="tickets"> User</a></li>
+                    </ul>
+                    <ul>
+                        <li> <a href="./Setting.html"><img src="./assets/settingxd.png" alt="setting"> Setting</a></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><a href="./index.html">Dashboard</a></li>
-                    <li><a href="./Tickets.html">Tickets</a></li>
-                </ul>
             </nav>
         </header>
         <section class="content-intranet-section">
-           <section class="content-card-section">
+           <section class="content-card-section tickets">
             <article class="adduserorSearch">
                 <h2>15,235 <span>users founds</span></h2>
                 <input type="text" placeholder="Search: User NO./ Email/ Name">
@@ -219,6 +226,11 @@
            </section>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./script.js"></script>
+    <script src="echarts.js"></script>
+    
+    <script src="./linechart.js"></script>
 </body>
 </html>

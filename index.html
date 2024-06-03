@@ -4,21 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/npm/simple-jscalendar@1.4.5/source/jsCalendar.min.js" integrity="sha384-F3Wc9EgweCL3C58eDn9902kdEH6bTDL9iW2JgwQxJYUIeudwhm4Wu9JhTkKJUtIJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-jscalendar@1.4.5/source/jsCalendar.min.css" integrity="sha384-CTBW6RKuDwU/TWFl2qLavDqLuZtBzcGxBXY8WvQ0lShXglO/DsUvGkXza+6QTxs0" crossorigin="anonymous">
+</head>
 </head>
 <body>
     <main class="content-intranet">
 
         <header class="content-intranet-menu">
             <nav class="menu">
-                <div>
+                <div class="menu-img">
                 <img src="./assets/clumer-250.png" alt="clumer logo">
 
+                </div>  
+                <div class="menu-contnet">
+
+                    <ul>
+                        <li><a href="./index.html"> <img src="./assets/home.png" alt="home"> Dashboard</a></li>
+                        <li><a href="./Tickets.html"><img src="./assets/travel.png" alt="tickets"> Tickets</a></li>
+                        <li><a href="./user.html"><img src="./assets/user.png" alt="tickets"> User</a></li>
+                    </ul>
+                    <ul>
+                        <li> <a href="./Setting.html"><img src="./assets/settingxd.png" alt="setting"> Setting</a></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><a href="./index.html">Dashboard</a></li>
-                    <li><a href="./Tickets.html">Tickets</a></li>
-                </ul>
             </nav>
         </header>
         <section class="content-intranet-section">
@@ -29,25 +40,97 @@
 
                 </article>
                 <article class="Grafic-content">
-                    <h2>Welcome, Jose👋</h2>
-                    <section class="grafic-content-users">
-                        <article class="grafic-content-users-item">
+                    <h2>Welcome, Miclovin👋</h2>
+                    <section class="grafic-content-dashboard">
+                       <section class="grafic-content-dashboard-two">
+                        <article class="grafic-content-dashboard-item">
                             <canvas id="myChart"></canvas>
 
                         </article>
-                        <article class="grafic-content-users-item">
-
+                        <article class="grafic-content-dashboard-item">
+                            <div id="circle" class="grafic-circle"></div>
                         </article>
-                        <article class="grafic-content-users-item">
+                        <article class="grafic-content-dashboard-item-options">
+                            <div class="options-item">
+                                <div class="options-item-img">
+                                    <img src="./assets/setting.png" alt="setting">
+                                </div>
+                                <h2>Setting</h2>
+                            </div>
+                            <div class="options-item">
+                                <div class="options-item-img">
+                                    <img src="./assets/user.png" alt="user">
+                                </div>
+                                <h2>Add Users</h2>
 
+                            </div>
+                            <div class="options-item">
+                                <div class="options-item-img">
+                                    <img src="./assets/logout.png" alt="logout">
+                                </div>
+                                <h2>Logout</h2>
+                            </div>
                         </article>
+                        
+                       </section>
+                        
+                        <article class="grafic-content-dashboard-item-user">
+                            <div class="user-grafic-content">
+                                <div>
+                                    <img src="./assets/McLovin Foto Documento.jpeg" alt="user">
+                                </div>
+                                <h2>Miclovin</h2>
+                                <h2 class="admin">Admin</h2>
+                            </div>
+<!-- Material theme -->
+<div class="auto-jsCalendar material-theme red calendarcustom"></div>
+<div class="newActivities">
+    <h2>New Activites</h2>
+    <!-- USers -->
+   <div class="newActivities   Dashboard-scroll">
+    <div class="user-activities">
+        <div class="user-activities-img">
+            <img src="./assets/McLovin Foto Documento.jpeg" alt="miclovin">
+        </div>
+        <div class="text">
+            <h2>Miclovin</h2>
+            <h3>5 Mins Ago</h3>
+        </div>
+    </div>
+    <div class="user-activities">
+        <div class="user-activities-img">
+            <img src="./assets/McLovin Foto Documento.jpeg" alt="miclovin">
+        </div>
+        <div class="text">
+            <h2>Miclovin</h2>
+            <h3>5 Mins Ago</h3>
+        </div>
+    </div> <div class="user-activities">
+        <div class="user-activities-img">
+            <img src="./assets/McLovin Foto Documento.jpeg" alt="miclovin">
+        </div>
+        <div class="text">
+            <h2>Miclovin</h2>
+            <h3>5 Mins Ago</h3>
+        </div>
+    </div>
+   </div>
+    <!-- USers -->
+
+</div>
+                        </article>
+                        
                     </section>
                 </article>
             </section>
         </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./script.js"></script>
+    <script src="echarts.js"></script>
+    
     <script src="./linechart.js"></script>
 </body>
 </html>

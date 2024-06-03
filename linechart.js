@@ -6,7 +6,7 @@ const data = {
     label: 'Company Grafic',
     data: [65, 59, 80, 81, 56, 55, 40],
     fill: false,
-    borderColor: 'rgb(75, 192, 192)',
+    borderColor: '#f58a17',
     tension: 0.1
   }]
 };
